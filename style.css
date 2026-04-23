@@ -1,0 +1,31 @@
+body {
+    background-image: url("https://meltyblood.typelumina.com/resources/img/top/bg2_cafb5f75f47564ba9a0b9e3fb4db5fd6.jpg");  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
+
+.modal-box {
+  max-height: 98vh;
+}
+
+.hover-3d {
+  position: relative;
+  cursor: zoom-in;
+}
+
+/* garante que a imagem se comporte corretamente */
+.hover-3d img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#lightbox-image {
+  max-height: 90vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+}
