@@ -9,39 +9,20 @@ function initVideos(container = document) {
         const videoId = src.split('/embed/')[1]?.replace('/', '');
         if (!videoId) return;
 
-        // Qualidades do YouTube (em cascata)
         const qualities = [
             'maxresdefault',
-            'hqdefault',
             'mqdefault',
             'sddefault',
             'default'
         ];
 
-        let i = 0;
+        let index = 0;
 
-        const img = document.createElement('img');
+        const img = new Image();
         img.className = 'w-full h-full object-cover';
-
-        function tryThumbnail() {
-            if (i >= qualities.length) return;
-            img.src = `https://img.youtube.com/vi/${videoId}/${qualities[i]}.jpg`;
-        }
-
-        img.onerror = () => {
-            i++;
-            tryThumbnail();
-        };
-
-        tryThumbnail();
-
-        // Layout base
-        el.innerHTML = '';
-        el.classList.add('relative', 'cursor-pointer');
 
         const overlay = document.createElement('div');
         overlay.className = 'absolute inset-0 flex items-center justify-center';
-
         overlay.innerHTML = `
             <div class="bg-black/60 rounded-full p-4 text-white flex items-center justify-center">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
@@ -50,10 +31,31 @@ function initVideos(container = document) {
             </div>
         `;
 
+        el.innerHTML = '';
+        el.classList.add('relative', 'cursor-pointer');
+
         el.appendChild(img);
         el.appendChild(overlay);
 
-        // Clique → iframe
+        function tryNext() {
+            if (index >= qualities.length) return;
+            img.src = `https://img.youtube.com/vi/${videoId}/${qualities[index]}.jpg`;
+        }
+
+        img.onload = () => {
+            if (img.naturalWidth <= 120) {
+                index++;
+                tryNext();
+            }
+        };
+
+        img.onerror = () => {
+            index++;
+            tryNext();
+        };
+
+        tryNext();
+
         el.addEventListener('click', () => {
             const iframe = document.createElement('iframe');
 
@@ -67,8 +69,6 @@ function initVideos(container = document) {
         });
     });
 }
-
-
 
 function loadModalIframes(container) {
     if (!container) return;
@@ -94,7 +94,6 @@ document.querySelectorAll('label[for$="-modal"]').forEach(label => {
     });
 });
 
-
 document.querySelectorAll('input[type="radio"][name="resources"]').forEach(radio => {
     radio.addEventListener('change', () => {
         if (!radio.checked) return;
@@ -105,7 +104,6 @@ document.querySelectorAll('input[type="radio"][name="resources"]').forEach(radio
         initVideos(tabContent);
     });
 });
-
 
 let currentFilter = null;
 
@@ -130,11 +128,7 @@ function filterCards(category, button = null) {
     cards.forEach(card => {
         const categories = card.getAttribute('data-category')?.split(' ') || [];
 
-        if (
-            !currentFilter ||
-            currentFilter === 'all' ||
-            categories.includes(currentFilter)
-        ) {
+        if (!currentFilter || currentFilter === 'all' || categories.includes(currentFilter)) {
             card.classList.remove('hidden');
         } else {
             card.classList.add('hidden');
@@ -150,5 +144,6 @@ window.addEventListener('DOMContentLoaded', () => {
     );
 
     filterCards(defaultCategory, defaultButton);
+
     initVideos();
 });
