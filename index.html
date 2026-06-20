@@ -65,7 +65,7 @@
     <div class="flex justify-center pb-5">
         <h1 class="text-xl text-center mx-3">Compiled by Tomoharu</h1>
         <p class="mt-0 text-xl font-bold">|</p>
-        <h1 class="text-xl text-center font-semibold mx-3"><i class="fa-solid fa-calendar-days mr-1"></i> Last Update: April 2026</h1>
+        <h1 class="text-xl text-center font-semibold mx-3"><i class="fa-solid fa-calendar-days mr-1"></i> Last Update: June 2026</h1>
     </div>
     <br><hr class="opacity-20 mx-5"><br>
 
@@ -343,7 +343,7 @@
                 <button onclick="filterCards('all', this)" class="btn filter-btn hover:bg-blue-500/20">All</button>
                 <button onclick="filterCards('highlight', this)" class="btn filter-btn hover:bg-blue-500/20">Highlights</button>
                 <button onclick="filterCards('neutral', this)" class="btn filter-btn hover:bg-blue-500/20">Neutral</button>
-                <button onclick="filterCards('offense', this)" class="btn filter-btn hover:bg-blue-500/20">Offense</button>
+                <button onclick="filterCards('offense', this)" class="btn filter-btn hover:bg-blue-500/20">Offense/Pressure</button>
                 <button onclick="filterCards('defense', this)" class="btn filter-btn hover:bg-blue-500/20">Defense</button>
                 <button onclick="filterCards('shield', this)" class="btn filter-btn hover:bg-blue-500/20">Shield</button>
                 <button onclick="filterCards('option-select', this)" class="btn filter-btn hover:bg-blue-500/20">Option Select</button>
@@ -354,6 +354,31 @@
 
             
             <div class="flex flex-wrap gap-5 justify-center" id="tab-mbtl">
+                <!--Mizuumi Wiki-->
+                <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
+                data-category="highlight other all">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-info">Wiki</div>
+                            Mizuumi Wiki
+                            <a href="https://mizuumi.wiki/w/Melty_Blood/MBTL"><i class="fas fa-external-link-alt text-blue-300 text-sm"></i></a>
+                        </h2>
+                    </div>
+                <figure class="relative overflow-hidden group cursor-pointer"
+                                onclick="window.open('https://mizuumi.wiki/w/Melty_Blood/MBTL', '_blank')">
+                    <img class="aspect-video w-full object-cover transition group-hover:scale-100"
+                        src="img/thumbnails/reference_mizuumi.png">
+
+                </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                MBTL Community
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!--ThatKirbo Shorts Playlist-->
                 <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
                 data-category="highlight">
@@ -462,21 +487,21 @@
                         </div>
                     </div>
                 </div>
-                <!--AlexMaestro Triple Overhead-->
+                <!--PCVolt MD Types-->
                 <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
-                data-category="moon-skill all">
+                data-category="all moon-skill">
                     <div class="card-body py-3">
                         <h2 class="card-title">
                             <div class="badge badge-sm badge-error">Video</div>
-                            MBTL Moon Drive Triple Jump Overhead Setup Breakdown
+                            [MBTL] The 2 types of Moon Drive
                         </h2>
                     </div>
-                       <div class="video aspect-video w-full" data-src="https://youtube.com/embed/qe3aer9UoSU/"></div>
+                       <div class="video aspect-video w-full" data-src="https://youtube.com/embed/tv6xc2Sjpjw/"></div>
                     <div class="card-body py-3">
                         <div class="grid grid-cols-2">
                             <div class="coluna col-span-2">
                                 <div class="badge badge-sm badge-soft mr-1">Author</div>
-                                AlexTheMaestro
+                                PC_volt
                             </div>
                         </div>
                     </div>
@@ -578,7 +603,7 @@
                 </div>
                 <!--ThatKirbo Heat Usage-->
                 <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
-                data-category="all offense defense neutral">
+                data-category="all offense defense">
                     <div class="card-body py-3">
                         <h2 class="card-title">
                             <div class="badge badge-sm badge-error">Video</div>
@@ -629,25 +654,6 @@
                             <div class="coluna col-span-2">
                                 <div class="badge badge-sm badge-soft mr-1">Author</div>
                                 Phantom
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Gaspit Farmley Character Overview-->
-                <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
-                data-category="all other">
-                    <div class="card-body py-3">
-                        <h2 class="card-title">
-                            <div class="badge badge-sm badge-error">Video</div>
-                            MELTY BLOOD: TYPE LUMINA | Character Overview
-                        </h2>
-                    </div>
-                       <div class="video aspect-video w-full" data-src="https://youtube.com/embed/9BhBUmACuy4/"></div>
-                    <div class="card-body py-3">
-                        <div class="grid grid-cols-2">
-                            <div class="coluna col-span-2">
-                                <div class="badge badge-sm badge-soft mr-1">Author</div>
-                                Gaspit Farmley
                             </div>
                         </div>
                     </div>
@@ -703,9 +709,28 @@
                         </div>
                     </div>
                 </div>
-                <!--Phantom 3C Clash-->
+                <!--Goo Crossup Protection-->
                 <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
                 data-category="other all">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            Crossup Break Mixups in MBTL
+                        </h2>
+                    </div>
+                       <div class="video aspect-video w-full" data-src="https://youtube.com/embed/r7iFi1gMrJE/"></div>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                Goo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Phantom 3C Clash-->
+                <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
+                data-category="offense all">
                     <div class="card-body py-3">
                         <h2 class="card-title">
                             <div class="badge badge-sm badge-error">Video</div>
@@ -750,12 +775,50 @@
                             Red Arcueid changed the MOST? | Melty Blood Type Lumina (Ver 1.46) Tier List
                         </h2>
                     </div>
-                       <div class="video aspect-video w-full" data-src="https://youtube.com/embed/9f43l7sd_-k/"></div>
+                       <div class="video aspect-video w-full" data-src="https://youtube.com/embed/TQFYithI8ac/"></div>
                     <div class="card-body py-3">
                         <div class="grid grid-cols-2">
                             <div class="coluna col-span-2">
                                 <div class="badge badge-sm badge-soft mr-1">Author</div>
                                 ScrawtVermillion
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Gaspit Farmley Character Overview-->
+                <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
+                data-category="all other">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            MELTY BLOOD: TYPE LUMINA | Character Overview
+                        </h2>
+                    </div>
+                       <div class="video aspect-video w-full" data-src="https://youtube.com/embed/9BhBUmACuy4/"></div>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                Gaspit Farmley
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--AlexTheMaestro Clashes-->
+                <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
+                data-category="all other">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            MBTL Clash System Breakdown
+                        </h2>
+                    </div>
+                       <div class="video aspect-video w-full" data-src="https://youtube.com/embed/0kNNredhaJc/"></div>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                AlexTheMaestro
                             </div>
                         </div>
                     </div>
@@ -893,6 +956,144 @@
                         </div>
                     </div>
                 </div>
+                <!--ThatKirbo Safejump-->
+                <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
+                data-category="all offense">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            Seal The Deal With OTGs in MELTY BLOOD: TYPE LUMINA
+                        </h2>
+                    </div>
+                       <div class="video aspect-video w-full" data-src="https://youtube.com/embed/DQ9tLLA1JEI/"></div>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                ThatKirbo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--AlexMaestro Triple Overhead-->
+                <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
+                data-category="moon-skill all">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            MBTL Moon Drive Triple Jump Overhead Setup Breakdown
+                        </h2>
+                    </div>
+                       <div class="video aspect-video w-full" data-src="https://youtube.com/embed/qe3aer9UoSU/"></div>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                AlexTheMaestro
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--kosunan Frame Display-->
+                <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
+                data-category="tools all">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-info">Tool</div>
+                            MBTL Frame Display (MBTL Training)
+                            <a href="https://github.com/kosunan/MBTL_Training"><i class="fas fa-external-link-alt text-blue-300 text-sm"></i></a>
+                        </h2>
+                    </div>
+                <figure class="relative overflow-hidden group cursor-pointer"
+                                onclick="window.open('https://github.com/kosunan/MBTL_Training', '_blank')">
+                    <img class="aspect-video w-full object-cover transition group-hover:scale-100"
+                        src="img/thumbnails/reference_kosunan.png">
+
+                </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                kosunan
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--eiton Hitbox Viewer-->
+                <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
+                data-category="tools all">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-info">Tool</div>
+                            MBTL Hitbox Viewer
+                            <a href="https://github.com/Eiton/MBTL-Hitbox-Viewer"><i class="fas fa-external-link-alt text-blue-300 text-sm"></i></a>
+                        </h2>
+                    </div>
+                <figure class="relative overflow-hidden group cursor-pointer"
+                                onclick="window.open('https://github.com/Eiton/MBTL-Hitbox-Viewer', '_blank')">
+                    <img class="aspect-video w-full object-cover transition group-hover:scale-100"
+                        src="img/thumbnails/reference_eiton.png">
+
+                </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                eiton
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fictionalist Dummy Tool-->
+                <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
+                data-category="tools all">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-info">Tool</div>
+                            Lumina Dummy Data Tool
+                            <a href="https://github.com/fictionalist/Lumina-Dummy-Data-Tool"><i class="fas fa-external-link-alt text-blue-300 text-sm"></i></a>
+                        </h2>
+                    </div>
+                <figure class="relative overflow-hidden group cursor-pointer"
+                                onclick="window.open('https://github.com/fictionalist/Lumina-Dummy-Data-Tool', '_blank')">
+                    <img class="aspect-video w-full object-cover transition group-hover:scale-100"
+                        src="img/thumbnails/reference_fictionalist.png">
+
+                </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                fictionalist
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FPan Modding Wiki-->
+                <div class="card bg-base-100 w-120 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90"
+                data-category="tools all">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-info">Wiki</div>
+                            French Bread Modding Wiki
+                            <a href="https://mizuumi.wiki/w/User:Pixloen/FPANModding"><i class="fas fa-external-link-alt text-blue-300 text-sm"></i></a>
+                        </h2>
+                    </div>
+                <figure class="relative overflow-hidden group cursor-pointer"
+                                onclick="window.open('https://mizuumi.wiki/w/User:Pixloen/FPANModding', '_blank')">
+                    <img class="aspect-video w-full object-cover transition group-hover:scale-100"
+                        src="img/thumbnails/reference_pixloen.png">
+
+                </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                pixloen / French Bread Community
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
                 <div class="w-120"></div>
@@ -924,7 +1125,6 @@
 <input type="checkbox" id="akiha-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="akiha-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -939,12 +1139,31 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="akiha" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
     
             <div class="flex flex-wrap gap-4 justify-center"> <!--Cards-->
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
+                  onclick="window.open('https://www.notion.so/Akiha-s-Combo-and-Okizeme-Doc-35c998b0f90b80e8a52edece8cc3a3b6?source=copy_link', '_blank')">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-info">Doc</div>
+                            Combo List + Guide<span class="star text-warning tooltip font-normal" data-tip="Highlight">★</span>
+                        </h2>
+                    </div>
+                    <figure class="aspect-video">
+                        <img src="img/thumbnails/akiha_doc_luffy.png" />
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                luffy9_6
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
                   onclick="window.open('https://mizuumi.wiki/w/Melty_Blood/MBTL/Akiha_Tohno', '_blank')">
                     <div class="card-body py-3">
@@ -1024,6 +1243,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            <div class="badge badge-sm badge-warning">Outdated</div>
+                            Combo List
+                        </h2>
+                    </div>
+                    <figure>
+                        <iframe class="aspect-video w-full ..." data-src="https://www.youtube.com/embed/-kkBLr-XrUA"></iframe>
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                Nahim
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -1041,7 +1280,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/akiha_jp_shijo.webp"></img>
+                            <img src="img/player_cards/akiha_jp_shijo.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1071,7 +1310,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/akiha_sa_nyss.webp"></img>
+                            <img src="img/player_cards/akiha_sa_nyss.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1100,7 +1339,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/akiha_na_luffy9_6.webp"></img>
+                            <img src="img/player_cards/akiha_na_luffy9_6.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1130,7 +1369,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/akiha_jp_teal.webp"></img>
+                            <img src="img/player_cards/akiha_jp_teal.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1160,7 +1399,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/akiha_na_nighto.webp"></img>
+                            <img src="img/player_cards/akiha_na_nighto.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1189,7 +1428,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/akiha_eu_nahim.webp"></img>
+                            <img src="img/player_cards/akiha_eu_nahim.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1227,7 +1466,6 @@
 <input type="checkbox" id="aoko-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="aoko-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -1242,7 +1480,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="aoko" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -1306,6 +1543,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            Okizeme Guide
+                        </h2>
+                    </div>
+                    <figure>
+                        <iframe class="aspect-video w-full ..." data-src="https://www.youtube.com/embed/vLK8Ueix4OE"></iframe>
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                reverse lunatic
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
                   onclick="window.open('https://docs.google.com/document/d/1_Ar89hFZT6ycw1nlH7GhwQsl2RyKXQnXpf334euBVk8/', '_blank')">
                     <div class="card-body py-3">
@@ -1365,7 +1621,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/aoko_jp_taka.webp"></img>
+                            <img src="img/player_cards/aoko_jp_taka.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1395,7 +1651,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/aoko_na_shinoa.webp"></img>
+                            <img src="img/player_cards/aoko_na_shinoa.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1424,7 +1680,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/aoko_eu_llewellyn.webp"></img>
+                            <img src="img/player_cards/aoko_eu_llewellyn.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1453,7 +1709,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/aoko_jp_a.webp"></img>
+                            <img src="img/player_cards/aoko_jp_a.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1492,7 +1748,6 @@
 <input type="checkbox" id="arcueid-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="arcueid-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -1507,12 +1762,31 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="arcueid" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20 border border-neutral" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
     
             <div class="flex flex-wrap gap-4 justify-center"> <!--Cards-->
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
+                  onclick="window.open('https://sites.google.com/view/mbtlfushicombos/', '_blank')">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-info">Doc</div>
+                            Combo List<span class="star text-warning tooltip font-normal" data-tip="Highlight">★</span>
+                        </h2>
+                    </div>
+                    <figure class="aspect-video">
+                        <img src="img/thumbnails/arcueid_doc_fushi.png" />
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                FuShi
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
                   onclick="window.open('https://lite.evernote.com/note/05dc6cec-e419-ac7c-14b9-b66ea4e33da4', '_blank')">
                     <div class="card-body py-3">
@@ -1649,7 +1923,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/arcueid_jp_taotao.webp"></img>
+                            <img src="img/player_cards/arcueid_jp_taotao.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1679,7 +1953,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/arcueid_na_kiri.webp"></img>
+                            <img src="img/player_cards/arcueid_na_kiri.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1708,7 +1982,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/arcueid_na_fushi.webp"></img>
+                            <img src="img/player_cards/arcueid_na_fushi.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1738,7 +2012,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/arcueid_sa_rekom.webp"></img>
+                            <img src="img/player_cards/arcueid_sa_rekom.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1767,7 +2041,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/arcueid_sa_redhydra.webp"></img>
+                            <img src="img/player_cards/arcueid_sa_redhydra.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1796,7 +2070,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/arcueid_eu_spotty_len.webp"></img>
+                            <img src="img/player_cards/arcueid_eu_spotty_len.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1825,7 +2099,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/arcueid_jp_gonsan.webp"></img>
+                            <img src="img/player_cards/arcueid_jp_gonsan.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -1863,7 +2137,6 @@
 <input type="checkbox" id="ciel-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="ciel-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -1878,7 +2151,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="ciel" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -2018,7 +2290,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/ciel_sa_donnie.webp"></img>
+                            <img src="img/player_cards/ciel_sa_donnie.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2047,7 +2319,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/ciel_na_arkhma.webp"></img>
+                            <img src="img/player_cards/ciel_na_arkhma.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2077,7 +2349,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/ciel_eu_zarpox.webp"></img>
+                            <img src="img/player_cards/ciel_eu_zarpox.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2106,7 +2378,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/ciel_jp_chalaska.webp"></img>
+                            <img src="img/player_cards/ciel_jp_chalaska.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2135,7 +2407,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/ciel_sa_davyll.webp"></img>
+                            <img src="img/player_cards/ciel_sa_davyll.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2164,7 +2436,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/ciel_eu_claudopedia.webp"></img>
+                            <img src="img/player_cards/ciel_eu_claudopedia.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2193,7 +2465,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/ciel_eu_casurio.webp"></img>
+                            <img src="img/player_cards/ciel_eu_casurio.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2231,7 +2503,6 @@
 <input type="checkbox" id="dan-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="dan-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -2246,7 +2517,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="dan" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -2292,26 +2562,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
-                  onclick="window.open('https://docs.google.com/spreadsheets/d/1agWRFCJQolvmjQNlp9P6O-5QJcNVmvyDYyq_QTYgFVs/', '_blank')">
-                    <div class="card-body py-3">
-                        <h2 class="card-title">
-                            <div class="badge badge-sm badge-success">Sheet</div>
-                            Combo List
-                        </h2>
-                    </div>
-                    <figure>
-                        <img src="img/thumbnails/dan_sheet.webp" />
-                    </figure>
-                    <div class="card-body py-3">
-                        <div class="grid grid-cols-2">
-                            <div class="coluna col-span-2">
-                                <div class="badge badge-sm badge-soft mr-1">Author</div>
-                                ???
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
                     <div class="card-body py-3">
                         <h2 class="card-title">
@@ -2327,6 +2577,44 @@
                             <div class="coluna col-span-2">
                                 <div class="badge badge-sm badge-soft mr-1">Author</div>
                                 Lunar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            Combo List
+                        </h2>
+                    </div>
+                    <figure>
+                        <iframe class="aspect-video w-full ..." data-src="https://www.youtube.com/embed/CSzUqbXiD9o"></iframe>
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                カズ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            Combo List
+                        </h2>
+                    </div>
+                    <figure>
+                        <iframe class="aspect-video w-full ..." data-src="https://www.youtube.com/embed/SlQue1e0CLM"></iframe>
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                ThatKirbo
                             </div>
                         </div>
                     </div>
@@ -2351,6 +2639,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
+                  onclick="window.open('https://docs.google.com/spreadsheets/d/1agWRFCJQolvmjQNlp9P6O-5QJcNVmvyDYyq_QTYgFVs/', '_blank')">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-success">Sheet</div>
+                            Combo List
+                        </h2>
+                    </div>
+                    <figure>
+                        <img src="img/thumbnails/dan_sheet.webp" />
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                ???
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -2368,7 +2676,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/dan_jp_welchdanchecker.webp"></img>
+                            <img src="img/player_cards/dan_jp_welchdanchecker.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2398,7 +2706,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/dan_eu_tintan.webp"></img>
+                            <img src="img/player_cards/dan_eu_tintan.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2428,7 +2736,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/dan_na_thatkirbo.webp"></img>
+                            <img src="img/player_cards/dan_na_thatkirbo.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2458,7 +2766,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/dan_jp_runner_kaz.webp"></img>
+                            <img src="img/player_cards/dan_jp_runner_kaz.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2487,7 +2795,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/dan_jp_charcha.webp"></img>
+                            <img src="img/player_cards/dan_jp_charcha.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2516,7 +2824,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/dan_na_yunxmi.webp"></img>
+                            <img src="img/player_cards/dan_na_yunxmi.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2530,7 +2838,7 @@
                         <div class="grid grid-cols-2">
                             <div class="coluna col-span-2">
                                 <div class="badge badge-sm badge-soft mr-1">Links</div>
-                                <a class="text-blue-500 underline" href="https://lumina.melty.games/?p1char=danoel&p1name=Blooming+Lotus+%28Rennala%29">melty.games</a>
+                                <a class="text-blue-500 underline" href="https://lumina.melty.games/?p1char=danoel&p1name=Yunxmi">melty.games</a>
                                 <a class="text-blue-500 underline ml-2" href="https://www.youtube.com/@Yunxmi">YouTube</a>
                             </div>
                         </div>
@@ -2555,7 +2863,6 @@
 <input type="checkbox" id="dantes-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="dantes-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -2570,12 +2877,30 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="dantes" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
     
             <div class="flex flex-wrap gap-4 justify-center"> <!--Cards-->
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            Complete Guide<span class="star text-warning tooltip font-normal" data-tip="Highlight">★</span>
+                        </h2>
+                    </div>
+                    <figure>
+                        <iframe class="aspect-video w-full ..." data-src="https://www.youtube.com/embed/g-T7ZuIhPm4"></iframe>
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                myuPicks
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
                     <div class="card-body py-3">
                         <h2 class="card-title">
@@ -2674,7 +2999,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/dantes_eu_teaps.webp"></img>
+                            <img src="img/player_cards/dantes_eu_teaps.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2703,7 +3028,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/dantes_eu_paupiette.webp"></img>
+                            <img src="img/player_cards/dantes_eu_paupiette.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2732,7 +3057,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/dantes_sa_joelinhus.webp"></img>
+                            <img src="img/player_cards/dantes_sa_joelinhus.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2770,7 +3095,6 @@
 <input type="checkbox" id="hisui-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="hisui-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -2785,7 +3109,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="hisui" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -2849,6 +3172,26 @@
                     </div>
                 </div>
                 <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
+                  onclick="window.open('https://docs.google.com/document/d/1JfcGqkIlZampLNa8V5dt_R6r59HmUydrZebQ2VksSUw', '_blank')">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-info">Doc</div>
+                            Okizeme Guide
+                        </h2>
+                    </div>
+                    <figure>
+                        <img src="img/thumbnails/hisui_doc_goo.png" />
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                Goo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
                   onclick="window.open('https://docs.google.com/spreadsheets/d/1A6Zhxgt6kdXeqFsTQgxSjOr0XoQW5M_v2Fj_P97MTuM', '_blank')">
                     <div class="card-body py-3">
                         <h2 class="card-title">
@@ -2904,7 +3247,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/hisui_jp_tazu.webp"></img>
+                            <img src="img/player_cards/hisui_jp_tazu.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2934,7 +3277,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/hisui_na_jurassicori.webp"></img>
+                            <img src="img/player_cards/hisui_na_jurassicori.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2953,6 +3296,35 @@
                         </div>
                     </div>
                 </div>
+                <!--shoki-->
+                <div class="card bg-base-100 w-70 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <img class="h-4 rounded-xs" src="https://www.worldometers.info/images/flags/w120/jp.webp">
+                            shoki (しょーき)
+                        </h2>
+                    </div>
+                    <div class="hover-3d rounded-xl">
+                        <figure>
+                            <img src="img/player_cards/hisui_jp_shoki.png"></img>
+                        </figure>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Links</div>
+                                <a class="text-blue-500 underline" href="https://lumina.melty.games/?p1char=hisui&p1name=Maid_love_syouki">melty.games</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!--Arasz-->
                 <div class="card bg-base-100 w-70 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
                     <div class="card-body py-3">
@@ -2963,7 +3335,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/hisui_jp_arasz.webp"></img>
+                            <img src="img/player_cards/hisui_jp_arasz.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -2992,7 +3364,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/hisui_jp_jing.webp"></img>
+                            <img src="img/player_cards/hisui_jp_jing.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3031,7 +3403,6 @@
 <input type="checkbox" id="kohaku-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="kohaku-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -3046,7 +3417,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="kohaku" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -3131,7 +3501,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/kohaku_lan_drackmae.webp"></img>
+                            <img src="img/player_cards/kohaku_lan_drackmae.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3160,7 +3530,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/kohaku_jp_rahika.webp"></img>
+                            <img src="img/player_cards/kohaku_jp_rahika.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3190,7 +3560,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/kohaku_na_arkhma.webp"></img>
+                            <img src="img/player_cards/kohaku_na_arkhma.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3220,7 +3590,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/kohaku_sa_danny_ssb.webp"></img>
+                            <img src="img/player_cards/kohaku_sa_danny_ssb.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3249,7 +3619,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/kohaku_sa_tomoharu.webp"></img>
+                            <img src="img/player_cards/kohaku_sa_tomoharu.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3279,7 +3649,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/kohaku_eu_desselie.webp"></img>
+                            <img src="img/player_cards/kohaku_eu_desselie.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3317,7 +3687,6 @@
 <input type="checkbox" id="kouma-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="kouma-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -3332,7 +3701,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="kouma" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -3455,7 +3823,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/kouma_na_scrawtv.webp"></img>
+                            <img src="img/player_cards/kouma_na_scrawtv.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3485,7 +3853,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/kouma_jp_noppo.webp"></img>
+                            <img src="img/player_cards/kouma_jp_noppo.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3515,7 +3883,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/kouma_sa_fowz.webp"></img>
+                            <img src="img/player_cards/kouma_sa_fowz.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3544,7 +3912,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/kouma_sa_tatu.webp"></img>
+                            <img src="img/player_cards/kouma_sa_tatu.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3573,7 +3941,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/kouma_eu_armades.webp"></img>
+                            <img src="img/player_cards/kouma_eu_armades.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3611,7 +3979,6 @@
 <input type="checkbox" id="maids-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="maids-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -3626,7 +3993,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="maids" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -3746,7 +4112,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/maids_jp_tazu.webp"></img>
+                            <img src="img/player_cards/maids_jp_tazu.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3776,7 +4142,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/maids_sa_tomoharu.webp"></img>
+                            <img src="img/player_cards/maids_sa_tomoharu.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3806,7 +4172,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/maids_eu_toodls.webp"></img>
+                            <img src="img/player_cards/maids_eu_toodls.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3835,7 +4201,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/maids_na_roger_with_a_w.webp"></img>
+                            <img src="img/player_cards/maids_na_roger_with_a_w.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3873,7 +4239,6 @@
 <input type="checkbox" id="mario-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="mario-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -3888,7 +4253,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="mario" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -3969,7 +4333,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/mario_jp_yutta.webp"></img>
+                            <img src="img/player_cards/mario_jp_yutta.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -3998,7 +4362,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/mario_na_jaykom.webp"></img>
+                            <img src="img/player_cards/mario_na_jaykom.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4028,7 +4392,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/mario_jp_moai.webp"></img>
+                            <img src="img/player_cards/mario_jp_moai.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4058,7 +4422,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/mario_na_vivian.webp"></img>
+                            <img src="img/player_cards/mario_na_vivian.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4087,7 +4451,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/mario_na_kirby.webp"></img>
+                            <img src="img/player_cards/mario_na_kirby.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4126,7 +4490,6 @@
 <input type="checkbox" id="mash-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="mash-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -4141,7 +4504,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="mash" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -4222,7 +4584,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/mash_jp_tazu.webp"></img>
+                            <img src="img/player_cards/mash_jp_tazu.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4252,7 +4614,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/mash_na_negareaper.webp"></img>
+                            <img src="img/player_cards/mash_na_negareaper.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4282,7 +4644,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/mash_sa_kowalski_023.webp"></img>
+                            <img src="img/player_cards/mash_sa_kowalski_023.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4312,7 +4674,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/mash_na_roger_with_a_w.webp"></img>
+                            <img src="img/player_cards/mash_na_roger_with_a_w.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4350,7 +4712,6 @@
 <input type="checkbox" id="miyako-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="miyako-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -4365,7 +4726,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="miyako" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -4429,6 +4789,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
+                  onclick="window.open('https://note.com/nekomiko_/n/n4becfa4a5df4', '_blank')">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-info">Doc</div>
+                            Combo List
+                        </h2>
+                    </div>
+                    <figure>
+                        <img src="img/thumbnails/miyako_doc_nekomiko.png" />
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                nekomiko (ねこみこ)
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -4446,7 +4826,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/miyako_na_phantom.webp"></img>
+                            <img src="img/player_cards/miyako_na_phantom.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4476,7 +4856,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/miyako_jp_nekomiko.webp"></img>
+                            <img src="img/player_cards/miyako_jp_nekomiko.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4515,7 +4895,6 @@
 <input type="checkbox" id="neco-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="neco-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -4530,7 +4909,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="neco" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -4670,7 +5048,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/neco_eu_gevreesdekat.webp"></img>
+                            <img src="img/player_cards/neco_eu_gevreesdekat.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4699,7 +5077,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/neco_jp_kurogomarashi.webp"></img>
+                            <img src="img/player_cards/neco_jp_kurogomarashi.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4728,7 +5106,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/neco_sa_kowalski_023.webp"></img>
+                            <img src="img/player_cards/neco_sa_kowalski_023.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4767,7 +5145,6 @@
 <input type="checkbox" id="noel-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="noel-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -4782,7 +5159,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="noel" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -4905,7 +5281,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/noel_lan_pala.webp"></img>
+                            <img src="img/player_cards/noel_lan_pala.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4934,7 +5310,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/noel_sa_augustop.webp"></img>
+                            <img src="img/player_cards/noel_sa_augustop.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4963,7 +5339,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/noel_jp_lemedexia.webp"></img>
+                            <img src="img/player_cards/noel_jp_lemedexia.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -4993,7 +5369,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/noel_eu_tortugoide.webp"></img>
+                            <img src="img/player_cards/noel_eu_tortugoide.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5022,7 +5398,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/noel_eu_caleryth.webp"></img>
+                            <img src="img/player_cards/noel_eu_caleryth.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5060,7 +5436,6 @@
 <input type="checkbox" id="pciel-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="pciel-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -5075,7 +5450,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="pciel" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -5104,6 +5478,45 @@
                     <div class="card-body py-3">
                         <h2 class="card-title">
                             <div class="badge badge-sm badge-error">Video</div>
+                            Combo List
+                        </h2>
+                    </div>
+                    <figure>
+                        <iframe class="aspect-video w-full ..." data-src="https://www.youtube.com/embed/kJ3m8l7Zb3s"></iframe>
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                オリハカT
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            Okizeme Guide
+                        </h2>
+                    </div>
+                    <figure>
+                        <iframe class="aspect-video w-full ..." data-src="https://www.youtube.com/embed/MbRGM-B5mug"></iframe>
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                オリハカT
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            <div class="badge badge-sm badge-warning">Novice</div>
                             Combo List
                         </h2>
                     </div>
@@ -5157,7 +5570,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/pciel_na_erin.webp"></img>
+                            <img src="img/player_cards/pciel_na_erin.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5186,7 +5599,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/pciel_jp_nata.webp"></img>
+                            <img src="img/player_cards/pciel_jp_nata.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5216,7 +5629,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/pciel_na_omnisscythe.webp"></img>
+                            <img src="img/player_cards/pciel_na_omnisscythe.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5245,7 +5658,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/pciel_sa_jorge.webp"></img>
+                            <img src="img/player_cards/pciel_sa_jorge.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5274,7 +5687,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/pciel_na_arkhma.webp"></img>
+                            <img src="img/player_cards/pciel_na_arkhma.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5304,7 +5717,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/pciel_na_crystal_kokkoro.webp"></img>
+                            <img src="img/player_cards/pciel_na_crystal_kokkoro.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5342,7 +5755,6 @@
 <input type="checkbox" id="red-arcueid-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="red-arcueid-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -5357,7 +5769,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="red-arcueid" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -5483,7 +5894,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/red_arcueid_na_kikoho.webp"></img>
+                            <img src="img/player_cards/red_arcueid_na_kikoho.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5512,7 +5923,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/red_arcueid_sa_hayasaka.webp"></img>
+                            <img src="img/player_cards/red_arcueid_sa_hayasaka.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5541,7 +5952,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/red_arcueid_jp_tsujisoth.webp"></img>
+                            <img src="img/player_cards/red_arcueid_jp_tsujisoth.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5579,7 +5990,6 @@
 <input type="checkbox" id="roa-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="roa-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -5594,7 +6004,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="roa" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -5619,11 +6028,50 @@
                         </div>
                     </div>
                 </div>
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
+                  onclick="window.open('https://docs.google.com/document/d/1afv90hozovQJLWcnF6ClX10NPvy09OzaU03vqA1hO7A', '_blank')">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-info">Doc</div>
+                            Complete Guide<span class="star text-warning tooltip font-normal" data-tip="Highlight">★</span>
+                        </h2>
+                    </div>
+                    <figure>
+                        <img src="img/thumbnails/roa_doc_jarraffe.png" />
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                Jarraffe
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
                     <div class="card-body py-3">
                         <h2 class="card-title">
                             <div class="badge badge-sm badge-error">Video</div>
-                            Combo Compilation
+                            Combo List
+                        </h2>
+                    </div>
+                    <figure>
+                        <iframe class="aspect-video w-full ..." data-src="https://www.youtube.com/embed/sNPBc3Ly-FE"></iframe>
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                DTerror
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 hover:scale-[1.02] transition hover:bg-gray-900/90">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-error">Video</div>
+                            Combo List
                         </h2>
                     </div>
                     <figure>
@@ -5675,7 +6123,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/roa_jp_moai.webp"></img>
+                            <img src="img/player_cards/roa_jp_moai.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5705,7 +6153,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/roa_eu_magicrider.webp"></img>
+                            <img src="img/player_cards/roa_eu_magicrider.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5734,7 +6182,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/roa_jp_yutta.webp"></img>
+                            <img src="img/player_cards/roa_jp_yutta.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5763,7 +6211,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/roa_eu_king_rasta.webp"></img>
+                            <img src="img/player_cards/roa_eu_king_rasta.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5792,7 +6240,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/roa_sa_dcgrz.webp"></img>
+                            <img src="img/player_cards/roa_sa_dcgrz.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5821,7 +6269,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/roa_na_ddive.webp"></img>
+                            <img src="img/player_cards/roa_na_ddive.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -5859,7 +6307,6 @@
 <input type="checkbox" id="saber-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="saber-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -5874,7 +6321,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="saber" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -5976,7 +6422,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/saber_na_blaznic.webp"></img>
+                            <img src="img/player_cards/saber_na_blaznic.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6005,7 +6451,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/saber_jp_daigo-hei.webp"></img>
+                            <img src="img/player_cards/saber_jp_daigo-hei.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6035,7 +6481,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/saber_na_madeinheaven.webp"></img>
+                            <img src="img/player_cards/saber_na_madeinheaven.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6064,7 +6510,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/saber_sa_dertako.webp"></img>
+                            <img src="img/player_cards/saber_sa_dertako.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6093,7 +6539,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/saber_eu_clopss.webp"></img>
+                            <img src="img/player_cards/saber_eu_clopss.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6122,7 +6568,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/saber_eu_takotime.webp"></img>
+                            <img src="img/player_cards/saber_eu_takotime.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6160,7 +6606,6 @@
 <input type="checkbox" id="shiki-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="shiki-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -6175,12 +6620,31 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="shiki" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
     
             <div class="flex flex-wrap gap-4 justify-center"> <!--Cards-->
+                <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
+                  onclick="window.open('https://datboyuchiha.notion.site/Uchiha-s-Shiki-Combo-Doc-WIP-83fa8ab629a64f5dbf61626fd90897c9', '_blank')">
+                    <div class="card-body py-3">
+                        <h2 class="card-title">
+                            <div class="badge badge-sm badge-info">Doc</div>
+                            Combo List<span class="star text-warning tooltip font-normal" data-tip="Highlight">★</span>
+                        </h2>
+                    </div>
+                    <figure>
+                        <img src="img/thumbnails/shiki_doc_datboyuchiha.png" />
+                    </figure>
+                    <div class="card-body py-3">
+                        <div class="grid grid-cols-2">
+                            <div class="coluna col-span-2">
+                                <div class="badge badge-sm badge-soft mr-1">Author</div>
+                                DatBoyUchiha
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="card bg-base-100 w-96 shadow-xl shadow-gray-500/10 border border-base-200 cursor-pointer hover:scale-[1.02] transition hover:bg-gray-900/90"
                   onclick="window.open('https://docs.google.com/spreadsheets/d/17a9GQ0a7cHeZLC-2Ix-Sayu2OVSdfgxliWYPl_zcct0', '_blank')">
                     <div class="card-body py-3">
@@ -6316,7 +6780,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/shiki_eu_gracideafield.webp"></img>
+                            <img src="img/player_cards/shiki_eu_gracideafield.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6345,7 +6809,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/shiki_jp_ronde.webp"></img>
+                            <img src="img/player_cards/shiki_jp_ronde.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6374,7 +6838,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/shiki_sa_yuki.webp"></img>
+                            <img src="img/player_cards/shiki_sa_yuki.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6403,7 +6867,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/shiki_na_datboyuchiha.webp"></img>
+                            <img src="img/player_cards/shiki_na_datboyuchiha.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6432,7 +6896,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/shiki_na_plat_ix.webp"></img>
+                            <img src="img/player_cards/shiki_na_plat_ix.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6470,7 +6934,6 @@
 <input type="checkbox" id="ushiwakamaru-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="ushiwakamaru-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -6485,7 +6948,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="ushiwakamaru" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -6506,7 +6968,7 @@
                         <div class="grid grid-cols-2">
                             <div class="coluna col-span-2">
                                 <div class="badge badge-sm badge-soft mr-1">Author</div>
-                                ???
+                                Yunxmi
                             </div>
                         </div>
                     </div>
@@ -6520,13 +6982,13 @@
                         </h2>
                     </div>
                     <figure>
-                        <img src="img/thumbnails/ushiwakamaru_doc_tomoharu.webp" />
+                        <img src="img/thumbnails/ushiwakamaru_doc_yunxmi.png" />
                     </figure>
                     <div class="card-body py-3">
                         <div class="grid grid-cols-2">
                             <div class="coluna col-span-2">
                                 <div class="badge badge-sm badge-soft mr-1">Author</div>
-                                Tomoharu / MBTL Community
+                                Yunxmi (compiled by Tomoharu)
                             </div>
                         </div>
                     </div>
@@ -6567,7 +7029,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/ushiwakamaru_na_fusshy.webp"></img>
+                            <img src="img/player_cards/ushiwakamaru_na_fusshy.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6597,7 +7059,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/ushiwakamaru_na_yunxmi.webp"></img>
+                            <img src="img/player_cards/ushiwakamaru_na_yunxmi.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6627,7 +7089,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/ushiwakamaru_jp_nao.webp"></img>
+                            <img src="img/player_cards/ushiwakamaru_jp_nao.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6665,7 +7127,6 @@
 <input type="checkbox" id="vlov-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="vlov-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -6680,7 +7141,6 @@
     </div>
     <hr class="opacity-20 pb-4">
 
-    <!-- name of each tab group should be unique -->
     <div class="tabs tabs-lift">
         <input type="radio" name="vlov" class="tab [--tab-bg:#20333333] hover:bg-gray-500/20" aria-label="References" checked="checked" />
         <div class="tab-content mt-1">
@@ -6805,7 +7265,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/vlov_na_medusa.webp"></img>
+                            <img src="img/player_cards/vlov_na_medusa.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6834,7 +7294,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/vlov_jp_coin.webp"></img>
+                            <img src="img/player_cards/vlov_jp_coin.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6864,7 +7324,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/vlov_na_akimi.webp"></img>
+                            <img src="img/player_cards/vlov_na_akimi.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6894,7 +7354,7 @@
                     </div>
                     <div class="hover-3d rounded-xl">
                         <figure>
-                            <img src="img/player_cards/vlov_jp_dento.webp"></img>
+                            <img src="img/player_cards/vlov_jp_dento.png"></img>
                         </figure>
                         <div></div>
                         <div></div>
@@ -6932,7 +7392,6 @@
 <input type="checkbox" id="help-modal" class="modal-toggle" />
 
 <div class="modal">
-  <!-- BACKDROP (fecha ao clicar fora) -->
   <label for="help-modal" class="modal-backdrop"></label>
 
   <!-- Modal -->
@@ -6967,7 +7426,7 @@
     <br><hr class="opacity-10 mb-2">
     <h4 class="text-md pt-5 pb-2 uppercase font-mono"><i class="font-normal fa-solid fa-caret-right mr-2"></i>Why did you make this website?</h4>
     <p class="text-gray-400">Resources for Melty Blood: Type Lumina are all scattered and not well organized.</p>
-    <p class="text-gray-400">Mizuumi Wiki is not updated properly, specially on the player references (please update the wiki with the player data presented here).</p>
+    <p class="text-gray-400">Some sections of Mizuumi Wiki are not properly updated, besides the current efforts from the community in trying to do so.</p>
     <p class="text-gray-400 pt-3">And most importantly: I want to make something cool to the community that I like so much. You're awesome.</p>
 
 
